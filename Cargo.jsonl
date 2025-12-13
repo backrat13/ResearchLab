@@ -1,0 +1,25 @@
+# File: ~/rusted_out/Cargo.toml
+[package]
+name = "data_log_processor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# CORE FIX: The "rt-multi-thread" feature is necessary for #[tokio::main]
+# It includes the scheduler that runs the async code.
+# The other features ("macros", "fs", "io-util") give you the tools.
+tokio = { version = "1.37", features = ["macros", "fs", "io-util", "rt-multi-thread"] }
+
+# JSON Serialization/Deserialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Robust Error Handling
+anyhow = "1.0"
+
+# Timestamp Parsing (Required by your src/main.rs)
+chrono = { version = "0.4", features = ["serde"] }
+
+# Optional: Binary serialization for ultra-fast reloading of processed data.
+# This will be useful when you have 1 million records.
+# bincode = "1.3"
