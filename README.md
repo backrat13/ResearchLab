@@ -1,3 +1,6 @@
+# ResearchLab
+
+# ChronoDB - Time-Series Database for Agent Research Data
 I REALLY JUST WANT TO BE A PART OF SOMETHING AI RELATED BECAUSE IT'S A PASSION OF MINE/ Direct message me if you want to see the python script to build your own....
 
 Python developer. Currently learning Rust. With ~1-year experience building and running Multi-Agent Simulations with different configs .See Commune_ResearchLab and/or  COMMUNE_PROJECT-V3, 
